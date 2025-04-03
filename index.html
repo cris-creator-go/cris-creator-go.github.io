@@ -1,0 +1,112 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">          
+    <link rel="stylesheet" href="style.css">       
+    <title>IPAA MOUNTAIN</title>
+</head> 
+<body>     
+    <div class="head">          
+        <div class="logo">             
+            <figure><img src="img/logo.jpg" height="95px" width="100%" alt="logo"></figure>         
+        </div>          
+        <nav class="navbar">             
+            <a href="#home" class="nav-link">HOME</a>             
+            <a href="#services" class="nav-link">SERVICES</a>             
+            <a href="#about" class="nav-link">ABOUT US</a>             
+            <a href="#contact" class="nav-link">CONTACT</a>         
+        </nav>     
+    </div>      
+
+    <header class="content header" id="home">         
+        <h2 class="title">HOME</h2>         
+        <p>Welcome to IPPA Mountain, your air conditioning solution.
+
+At IPPA Mountain, we offer installation, repair, and maintenance of air conditioners. Whether you need a new system, an urgent repair, or preventive maintenance, we are ready to ensure your comfort. We help you keep your space cool and comfortable. Contact us and enjoy the perfect environment!</p>          
+    </header>      
+
+    <section class="content sau" id="services">          
+        <h2 class="title">SERVICES</h2>         
+        <p>The services we offer are</p>                  
+        <div class="box-container">              
+            <div class="box">                 
+                <img src="img/1675092.png" alt="fan" class="service-img" width="40">                
+                <h3>Installation</h3>                 
+                <p>We carry out the installation of air conditioners, ensuring efficiency and safety.</p>
+                <img src="img/arreglando aire.jpg" alt="Air installation" class="hover-img" width="60">
+            </div>              
+
+            <div class="box">                 
+                <img src="img/1675092.png" alt="fan" class="service-img" width="40">                
+                <h3>Maintenance</h3>                 
+                <p>We provide maintenance services for air conditioners, ensuring efficiency.</p>             
+                <img src="img/mantenimiento.jpg" alt="Air maintenance" class="hover-img" width="40">
+            </div>              
+
+            <div class="box">                 
+                <img src="img/1675092.png" alt="fan" class="service-img" width="40">                 
+                <h3>Repair</h3>                 
+                <p>We offer specialized air conditioner repair services.</p>             
+                <img src="img/como-reparar-aires-acondicionados-1.jpg" alt="Air repair" class="hover-img" width="40">
+            </div>          
+        </div>     
+    </section>
+
+    <section class="content about" id="about">          
+        <h2 class="title">ABOUT US</h2>         
+        <div class="nosotros-container">
+            <div class="nosotros-box">
+                <h3>Mission</h3>
+                <p>Our mission is to provide high-quality services...</p>
+            </div>
+            <div class="nosotros-box">
+                <h3>Vision</h3>
+                <p>Our vision is to be leaders in the industry...</p>
+            </div>
+        </div>   
+    </section>      
+
+    <section class="content price" id="contact">          
+        <article class="contain">             
+            <h2 class="title">CONTACT</h2>
+            <a href="https://mail.google.com/">ippamountain@gmail.com</a>
+            <p>GMAIL</p>
+            <p>NUM:562 284 6843</p>
+            <a href="https://www.facebook.com/profile.php?id=61574622904043" target="_blank">
+                <img src="img/facebook.png" alt="Facebook" width="100">
+            </a>
+            <a href="https://www.instagram.com/ipaa_mountain?fbclid=IwY2xjawJQdcdleHRuA2FlbQIxMAABHQD1drJz_qovB20vM6bfRvdppYSk6uojspdqBJJMLaJMblsD-pISMzoD7Q_aem_FcojdSjOe42rRJssWdkJeg" target="_blank">
+                <img src="img/instagram.png" alt="Instagram" width="100">
+            </a>
+        </article>     
+    </section> 
+    <section class="content video-section" id="video">
+        <h2 class="title">VIDEO PRESENTATION</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="./img/WhatsApp Video 2025-03-30 at 9.15.25 AM.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    
+
+
+    <script> 
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 50, 
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script> 
+</body> 
+</html>
